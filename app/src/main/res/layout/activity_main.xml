@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ff7700"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/list_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="20" />
+
+    <ListView
+        android:id="@+id/list_result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_draw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.507"
+        app:layout_constraintVertical_weight="70">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_draw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Draw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_result"
+        app:layout_constraintVertical_weight="10" />
+</androidx.constraintlayout.widget.ConstraintLayout>

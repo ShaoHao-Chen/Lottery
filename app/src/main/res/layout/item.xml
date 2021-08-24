@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/groupTitle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_n1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="1"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/item_n2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_title" />
+
+    <TextView
+        android:id="@+id/item_n2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="2"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/item_n3"
+        app:layout_constraintStart_toEndOf="@+id/item_n1"
+        app:layout_constraintTop_toTopOf="@+id/item_n1" />
+
+    <TextView
+        android:id="@+id/item_n3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="3"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/item_n4"
+        app:layout_constraintStart_toEndOf="@+id/item_n2"
+        app:layout_constraintTop_toTopOf="@+id/item_n2" />
+
+    <TextView
+        android:id="@+id/item_n4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="4"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/item_n5"
+        app:layout_constraintStart_toEndOf="@+id/item_n3"
+        app:layout_constraintTop_toTopOf="@+id/item_n3" />
+
+    <TextView
+        android:id="@+id/item_n5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="5"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/item_n6"
+        app:layout_constraintStart_toEndOf="@+id/item_n4"
+        app:layout_constraintTop_toTopOf="@+id/item_n4" />
+
+    <TextView
+        android:id="@+id/item_n6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="6"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/item_n5"
+        app:layout_constraintTop_toTopOf="@+id/item_n5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
